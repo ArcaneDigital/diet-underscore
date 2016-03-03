@@ -17,8 +17,9 @@ npm install diet-underscore
 var server = require('diet');
 var _ = require('diet-underscore')(
   {
-    path: app.path + '/views/',
-    ext: 'tpl'
+    path: app.path + '/views/', //path to views folder
+    ext: 'tpl', //default extension for templates
+    default: 'default' //default template
   }
 );
 
@@ -30,7 +31,7 @@ app.header(_);
  
 app.get('/', function($) {
   $.data.message = 'This is awesome!';
-  //will render template at ./views/path/index.tpl
+  //will render template at ./views/path/default.tpl
   $.html();
 })
 
