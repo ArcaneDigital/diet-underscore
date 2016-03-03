@@ -1,9 +1,5 @@
 # diet-underscore
-Underscore template engine plugin for diet based on underscore.js
-
-## **Learn about Underscore**:
-Learn how to use it at the engine's website:
-- **Website:** [http://underscorejs.org/](http://underscorejs.org/)
+Template engine plugin for [dietjs](http://dietjs.com/) based on [underscorejs](http://underscorejs.org/)
 
 ## **Install**
 
