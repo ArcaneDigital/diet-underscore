@@ -1,6 +1,6 @@
 {
   "name": "diet-underscore",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Template engine plugin for dietjs based on underscorejs",
   "main": "index.js",
   "scripts": {
