@@ -7,11 +7,12 @@ module.exports = function(options){
   options = options || {}
   options.ext = options.ext || 'tpl';
   options.path = options.path || './';
+	options.default = options.default || 'default';
 	
   return function($){
 		$.htmlModule = function(template){
 			
-      const file = template ? template : 'index'; 
+      const file = template ? template : options.default; 
       const tpl = fs.readFileSync(options.path + file + '.' + options.ext).toString();
       let comp = _.template(tpl);
       const html = comp($.data);
